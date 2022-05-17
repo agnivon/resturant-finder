@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery and jQuery Mobile -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"
+        integrity="sha256-Lsk+CDPOzTapLoAzWW0G/WeQeViS3FMzywpzPZV8SXk=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Restaurant Finder</title>
+</head>
+
+<body>
+    <div data-role="page" id="page4" data-theme="b">
+        <div data-role="header">
+            <a href="restaurants.html" data-icon="arrow-l" class="ui-btn-left" style="margin: 5px;">Back</a>
+            <h1>Restaurant Finder</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h2 id="restaurant-name">Restaurant Name</h2>
+                    <span id="restaurant-rating""></span>
+                    <p>On the menu:</p>
+                    <ul>
+                        <li>Pizza</li>
+                        <li>Burger</li>
+                        <li>Sushi</li>
+                        <li>Pasta</li>
+                        <li>Momos</li>
+                        <li>Noodles</li>
+                    </ul>
+                </div>
+                <div class="ui-block-b">
+                    <p>
+                        <img id="restaurant-img">
+                        <button class="ui-btn">Open website</button>
+                    </p>
+                </div>
+            </div><!-- /grid-a -->
+            <hr>
+            <div class=" ui-grid-a">
+                <div class="ui-block-a">
+                    <h2>Contact Us</h2>
+                    <h4>
+                        <p style="margin-right:20px;">
+                            <i>Address - </i> <span id="restaurant-city"></span>
+                        </p>
+                    </h4>
+                </div>
+                <div class="ui-block-b">
+                    <p>
+                        <img src="https://via.placeholder.com/640">
+                    </p>
+                </div>
+                <div data-role="controlgroup">
+                    <button class="ui-btn ui-icon-location ui-btn-icon-left">Find us on Google Maps</button>
+                    <button class="ui-btn ui-icon-phone ui-btn-icon-left">Call us</button>
+                </div>
+            </div><!-- /gird-b -->
+            <hr>
+            <div style="text-align: center;">
+                <a href="#popupMenu" data-rel="popup" data-transition="flow"
+                    class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-star ui-btn-icon-left">
+                    Rate this restaurant</a>
+                <div data-role="popup" id="popupMenu" data-theme="b">
+                    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+                        <li data-icon="false"><a href="#"><span rating="1"></span></a></li>
+                        <li data-icon="false"><a href="#"><span rating="2"></span></a></li>
+                        <li data-icon="false"><a href="#"><span rating="3"></span></a></li>
+                        <li data-icon="false"><a href="#"><span rating="4"></span></a></li>
+                        <li data-icon="false"><a href="#"><span rating="5"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer">
+            <h6>Find restaurants instantly</h6>
+        </div>
+    </div>
+</body>
+
+</html>

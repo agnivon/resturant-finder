@@ -1,0 +1,24 @@
+body {
+    font-family: Questrial;
+}
+
+[data-role="header"] {
+    font-size: 1.27em;
+    overflow: hidden;
+}
+
+[data-role="header"] .ui-title {
+    font-family: Lobster;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0.3em 0;
+}
+
+.rating i {
+    margin: 0 3px;
+}
+
+#page4 .ui-grid-a img {
+    max-height: 12em;
+}
